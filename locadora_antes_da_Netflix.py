@@ -1,4 +1,4 @@
-""" 2 - Houve um época em que, quando as pessoas queriam assistir um filme, iam até a
+""" 2 - Houve uma época em que, quando as pessoas queriam assistir um filme, iam até a
 locadora.
 Crie uma classe filme que contém os atributos
 gênero, nome, disp_catalogo. Você deve criar um método que altere
