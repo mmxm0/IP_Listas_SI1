@@ -1,3 +1,14 @@
+'''1- Os alunos da cadeira de Taxonomia do curso de biologia precisam
+de um sistema que cadastre os nomes dos seres vivos que estudam de acordo
+com os seguintes parâmetros: nome vulgar ou nome comum e o nome cientifico.
+O nome cientifico de um ser vivo obedece as seguintes regras: é um nome composto
+por dois nomes em latim, sendo o primeiro indicando o gênero e o segundo nome
+indicando a espécie. Desenvolva esse sistema. Ele deve conter um método que
+faça o nome cientifico ser válido, isto é: o primeiro nome deve sempre começar
+com letra  maiúscule e o segundo e com letra minúscula.
+Adicione também metódos que obetenha o gênero e a espécie do ser vivo.
+Teste sua classe.
+'''
 class SeresVivos:
     def __init__(self, seres=[]):
         self.__seres = []
