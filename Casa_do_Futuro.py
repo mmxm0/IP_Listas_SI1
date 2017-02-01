@@ -23,7 +23,7 @@ class Casa:
         l = time.split(":")
         l = [int(x) for x in l]
         hours = l[0]
-        lrange = [18,19,20,21,22,23,0,1,2]
+        lrange = [0,1,2,18,19,20,21,22,23]
         if hours in lrange:
             self.lightsOn()
             print(self.__luzexterna,"luzes externas acessas")
@@ -32,5 +32,29 @@ class Casa:
             self.lightsOff()
             print(self.__luzexterna,"luzes externas não estão acesas")
 
+    def openDoors(self):
+        self.__portas = True
+
+    def closeDoors(self):
+        self.__portas = False
+
+    def statusDoors(self):
+        if self.__portas:
+            print("As portas estão abertas")
+        else:
+            print("As portas não estão abertas")
+
+    def turnOnlights(self):
+        self.__luzinterna = True
+
+    def turnOfflights(self):
+        self.__luzinterna = False
+
+    def statusLights(self):
+        if self.__luzeinterna:
+            print("Luzes internas acesas")
+        else:
+            print("Luzes internas apagadas") 
+            
 casa1 = Casa()
 casa1.updateStatusLights("2:59")
